@@ -6,12 +6,7 @@ export const FriendsListEl = ({ friends }) => {
   return (
     <li className={styles.item}>
       <span
-        // style={{backgroundColor: friends.isOnline = true ? styles.green : styles.red}}
-        className={clsx(
-          styles.status,
-          friends.isOnline === true ? styles.green : styles.red
-        )}
-      />
+        className={clsx (styles.status, {[styles.isOnline]: friends.isOnline})}/>
 
       <img
         className={styles.avatar}

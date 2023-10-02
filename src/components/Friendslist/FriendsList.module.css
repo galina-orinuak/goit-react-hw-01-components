@@ -21,5 +21,10 @@
   width: 10px;
   height: 10px;
   border: solid;
-  border-color: gray;
+  border-color: rgb(179, 174, 174);
+  background-color: red;
+}
+
+.status.isOnline {
+  background-color: green;
 }
