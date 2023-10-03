@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './FriendsList.module.css';
+import styles from './FriendsListEl.module.css';
 import { clsx } from 'clsx';
 
 export const FriendsListEl = ({ friends }) => {

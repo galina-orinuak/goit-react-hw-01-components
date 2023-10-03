@@ -1,11 +1,11 @@
 import React from 'react';
-import { StatisticsEl } from './StatisticsEl';
+import { StatisticsEl } from '../StatisticsEl/StatisticsEl.jsx';
 import styles from './Statistics.module.css';
 
-export const Statistics = ({ stats }) => {
+export const Statistics = ({ title, stats }) => {
   return (
     <section className={styles.statistics}>
-      <h2 className={styles.title}>UPLOAD STATS</h2>
+      {title && <h2 className={styles.title}>{title}</h2>}
       <div className={styles.statList}>
         {stats.map(stats => (
           <StatisticsEl key={stats.id} stats={stats} />

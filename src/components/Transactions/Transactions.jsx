@@ -1,5 +1,5 @@
 import React from 'react';
-import { TransactionsEl } from './TransactionsEl';
+import { TransactionsEl } from '../TransactionsEl/TransactionsEl';
 import styles from './Transactions.module.css';
 
 export const Transactions = ({ transactions }) => {

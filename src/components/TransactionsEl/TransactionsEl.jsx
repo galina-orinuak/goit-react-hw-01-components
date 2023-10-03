@@ -1,5 +1,4 @@
 import React from 'react';
-// import styles from './Transactions.module.css'
 
 export const TransactionsEl = ({ transactions }) => {
   return (
